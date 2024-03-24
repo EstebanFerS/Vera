@@ -1,0 +1,43 @@
+:root{
+    --blanco:     #ffffff;
+    --oscuro:     #212121;
+    --primario:   #ffc107;
+    --secundario: #0097a7;
+    --gris:       #757575;
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+    
+body{
+    font-size: 16px; /*1rem = 100px*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--blanco);
+    color: var(--blanco);
+    
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--oscuro);
+    font-weight: 1000;
+ }
+
+ h2{
+ font-size: 2.5rem;
+    font-weight: 950;
+ }
+
+
+ h2{
+     font-size: 2.5rem;
+     font-weight: 1000;
+ }

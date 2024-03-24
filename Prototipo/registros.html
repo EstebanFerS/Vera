@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preload" href="style.css" as="style">
+    <link href="estiloregistro.css" rel="stylesheet">
+    <title>Resultados</title>
+    <link href="https://lh3.googleusercontent.com/proxy/rQnXLL7V__RuvgtrHrAsSmnZC0hmaWEG03MRMgYuyGfsNe6fQvlalR-kMqOsLkd9prOYI5phQMZ4I5jMhfKXs0a7e0s" rel="shortcut icon" type= 'img/png'>
+
+
+    <script>
+        function displayRow(token, timestamp, candidate, delay) {
+            setTimeout(function () {
+                const table = document.getElementById("resultsTable");
+                const newRow = table.insertRow();
+                newRow.insertCell().textContent = token;
+                newRow.insertCell().textContent = timestamp;
+                newRow.insertCell().textContent = candidate;
+                newRow.insertCell().textContent = ganador;
+            }, delay);
+        }
+
+        // Display rows with delays
+        displayRow("3G7F9A", "16:47:57", "Candidato x (Partido a)", 1000); 
+        displayRow("D2H6E8", "16:47:58", "Candidato x (Partido a)", 2000);
+        displayRow("5A4B7D", "16:47:59", "Candidato y (Partido b)", 3000);
+        displayRow("C9F2E6", "16:48:01", "Candidato y (Partido b)", 4000);
+        displayRow("G5H8J3", "16:47:02", "Candidato z (Partido c)", 5000);
+        displayRow("B4D6F9", "16:47:03", "Candidato y (Partido b)", 6000);
+        displayRow("E7A2C5", "16:47:04", "Candidato z (Partido c)", 7000);
+
+        displayRow("1F3G6H", "16:47:57", "Candidato x (Partido a)", 8000);
+        displayRow("J9K2L4", "16:47:58", "Candidato x (Partido a)", 9000);
+        displayRow("8M5N7P", "16:47:59", "Candidato y (Partido b)", 10000);
+        displayRow("Q1R4T6", "16:48:01", "Candidato y (Partido b)", 11000);
+        displayRow("S3U8V2", "16:47:02", "Candidato z (Partido c)", 12000);
+        displayRow("W9X4Y6", "16:47:03", "Candidato y (Partido b)", 13000);
+        displayRow("Z7C5V3", "16:47:04", "Candidato z (Partido c)", 14000);
+        displayRow("      ", "        ", " Ganador: Candidato y  ", 15000);
+
+    </script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+   <center><h1>Votaciones en tiempo real</h1></center>
+   <center><h2><a href="index.html" style="text-decoration: none;color:#0097a7">Menu</a></h2></center>
+    <table align="center" id="resultsTable">
+        <tr>
+            <th>Token</th>
+            <th>Timestamp</th>
+            <th>Candidato</th>
+            
+        </tr>
+    </table>
+</body>
+</html>
